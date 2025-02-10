@@ -219,7 +219,7 @@ Napi::Value ReadValues(const Napi::CallbackInfo& info)
 }
 
 Napi::Value EnumKeys(const Napi::CallbackInfo& info) {
-  Napi::Env env = info.Env();
+  const Napi::Env &env = info.Env();
 
   auto argCount = info.Length();
   if (argCount != 1 && argCount != 2)
@@ -285,7 +285,7 @@ Napi::Value EnumKeys(const Napi::CallbackInfo& info) {
 
 Napi::Value CreateKey(const Napi::CallbackInfo& info)
 {
-  Napi::Env env = info.Env();
+  const Napi::Env &env = info.Env();
 
   auto argCount = info.Length();
   if (argCount != 2)
@@ -343,7 +343,7 @@ Napi::Value CreateKey(const Napi::CallbackInfo& info)
 
 Napi::Value SetValue(const Napi::CallbackInfo& info)
 {
-  Napi::Env env = info.Env();
+  const Napi::Env &env = info.Env();
 
   auto argCount = info.Length();
   if (argCount != 5)
