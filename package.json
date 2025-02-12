@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/desktop/registry-js.git"
+    "url": "git+https://github.com/zlaski/registry-js.git#hybrid-chunk-store"
   },
   "keywords": [],
   "author": "",
